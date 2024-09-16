@@ -32,6 +32,11 @@ jobs:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
 
+    permissions:
+      id-token: write
+      contents: write
+      attestations: write
+
     steps:
       - name: Check out Git repository Fully
         uses: actions/checkout@v4
